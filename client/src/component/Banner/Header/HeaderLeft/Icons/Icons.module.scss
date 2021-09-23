@@ -1,0 +1,57 @@
+.agileinfo_social_grids {
+  float: right;
+  margin: .5em 0 0 0;
+
+  & ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  & ul li {
+    display: inline-block;
+    margin: 0 .5em 0 0;
+  }
+
+  & ul li a {
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  & ul li a i.fa, & ul li a i.fa.fa-twitter, & ul li a i.fa.fa-rss, & ul li a i.fa.fa-vk {
+    height: 30px;
+    width: 30px;
+    border: solid 2px #FFFFFF;
+    line-height: 29px;
+    background: none;
+    color: #FFFFFF;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+
+  & ul li a i.fa.fa-facebook:hover {
+    border: solid 2px #3b5998;
+    background: #3b5998;
+    color: #FFFFFF;
+  }
+
+  & ul li a i.fa.fa-twitter:hover {
+    border: solid 2px #55acee;
+    background: #55acee;
+    color: #FFFFFF;
+  }
+
+  & ul li a i.fa.fa-rss:hover {
+    border: solid 2px #f26522;
+    background: #f26522;
+    color: #FFFFFF;
+  }
+
+  & ul li a i.fa.fa-vk:hover {
+    border: solid 2px #45668e;
+    background: #45668e;
+    color: #FFFFFF;
+  }
+}

@@ -17,7 +17,7 @@ html, body{
 	font-family: 'Roboto Condensed', sans-serif;
 	background:#FFFFFF;
 }
-/*-- banner --*/
+/*-- Banner --*/
 .banner{
 	background: url(../images/2.jpg) no-repeat 0px -52px;
     background-size: cover;
@@ -147,7 +147,7 @@ html, body{
     color: #F44336 !important;
 }
 /*-- //top-nav --*/
-/*-- banner-info --*/
+/*-- Banner-info --*/
 .banner-info{
     margin: 12em 0 0 0;
     text-align: center;
@@ -252,7 +252,7 @@ html, body{
   transform: scaleY(1);
 }
 
-/*-- //banner-info --*/
+/*-- //Banner-info --*/
 /*-- about --*/
 .about,.gallery,.team,.services,.news,.testimonial,.subscribe,.contact{
 	padding:4em 0;

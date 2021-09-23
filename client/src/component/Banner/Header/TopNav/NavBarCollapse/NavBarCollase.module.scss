@@ -1,0 +1,7 @@
+.navbar_nav {
+  float: none;
+
+  & .active {
+    color: #F44336 !important;
+  }
+}

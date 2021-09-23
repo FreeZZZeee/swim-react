@@ -1,69 +1,10 @@
 import React from "react";
-import {logo, icons, categories} from './data'
+import BannerContainer from "./component/Banner/BannerContainer";
 
-function App() {
+function App(props) {
     return (
         <div className="App">
-            <div className="banner" id={'head'}>
-                <div className="header">
-                    <div className="header-left">
-                        <div className="w3layouts-logo">
-                            <h1>
-                                <a href={'#head'}>{logo.title}</a>
-                            </h1>
-                        </div>
-                        <div className="agileinfo-social-grids">
-
-                            <ul>
-                                {icons.map((icon) => (
-                                    <li key={icon._id}><a href={icon.href}><i className={icon.class}></i></a></li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="clearfix"></div>
-                    </div>
-                    <div className="top-nav">
-                        {categories.map(({navbarHeader, navBarNav}, key) => (
-                            <nav key={`categories-${key}`} className="navbar navbar-default">
-                                <div className="navbar-header">
-                                    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse"
-                                            data-target="#bs-example-navbar-collapse-1">
-
-                                        {navbarHeader.map((navBarSpan) => (
-                                            <span key={navBarSpan._id}
-                                                  className={navBarSpan.class}>{navBarSpan.title}</span>
-                                        ))
-                                        }
-                                    </button>
-                                </div>
-                                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <ul className="nav navbar-nav">
-                                        {navBarNav.map((navBarLink) => (
-                                            <li key={navBarLink._id}><a className={navBarLink.class}
-                                                   href={navBarLink.href}>{navBarLink.title}</a></li>
-                                        ))}
-                                    </ul>
-                                    <div className="clearfix"></div>
-                                </div>
-                            </nav>
-                        ))}
-                    </div>
-                    <div className="clearfix"></div>
-                </div>
-                <div className="banner-info">
-                    <div className="container">
-                        <h3>A new generation in learn to</h3>
-                        <h2>swim classNamees</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere tempor quam, vitae
-                            vestibulum lacus placerat non. Donec volutpat odio sed neque molestie elementum quis nec
-                            nisi. Phasellus elit leo, lobortis non massa in, elementum maximus urna.</p>
-                        <div className="w3-button">
-                            <a href="/#" className="hvr-sweep-to-bottom" data-toggle="modal" data-target="#myModal">Read
-                                More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <BannerContainer />
             <div className="about" id="about">
                 <div className="container">
                     <div className="about-heading">

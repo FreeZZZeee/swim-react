@@ -1,0 +1,49 @@
+.banner_info {
+  margin: 12em 0 0 0;
+  text-align: center;
+
+  & h3 {
+    color: #FFFFFF;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+  }
+
+  & h3:before {
+    content: "";
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    width: 5%;
+    top: 22px;
+    left: 275px;
+  }
+
+  & h3:after {
+    content: "";
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    width: 5%;
+    top: 22px;
+    right: 275px;
+  }
+
+  & h2 {
+    color: #FFFFFF;
+    font-size: 3em;
+    font-weight: 700;
+    margin: .5em 0;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+  }
+
+  & p {
+    color: #FFFFFF;
+    font-size: .9em;
+    line-height: 1.8em;
+    margin: 0 auto;
+    width: 61%;
+  }
+}

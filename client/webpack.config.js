@@ -2,9 +2,17 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: [ 'style-loader', 'css-loader' ]
-            }
+                test: cssRegex,
+                exclude: cssModuleRegex,
+                use: [
+                    { loader: "style-loader" },
+                    { loader: "css-loader" },
+                    getStyleLoaders({
+                    importLoaders: 1,
+                    modules: true
+                }),
+                ]
+            },
         ]
     }
 }

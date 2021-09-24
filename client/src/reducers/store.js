@@ -1,7 +1,5 @@
-import style from '../component/Banner/Header/TopNav/TopNav.module.scss'
-import logoReducer from "./logo-reducer";
-let store = {
-    _state: {
+
+const state = {
         // Header
 
         logo: {
@@ -18,7 +16,7 @@ let store = {
         categories: [
             {
                 navBarNav: [
-                    {_id: '1', href: '#Banner', class: `nav-link ${style.active}`, title: 'Главная'},
+                    {_id: '1', href: '#Banner', class: `nav-link`, title: 'Главная'},
                     {_id: '2', href: '#about', class: 'nav-link scroll', title: 'О нас'},
                     {_id: '3', href: '#gallery', class: 'nav-link scroll', title: 'Галерея'},
                     {_id: '4', href: '#team', class: 'nav-link scroll', title: 'Сотрудники'},
@@ -149,13 +147,6 @@ let store = {
         contactUs: [
             {}
         ]
-    },
-    getState() {
-        return this._state
-    },
-    dispatch(action) {
-        this._state.logo = logoReducer(this._state.logo, action)
     }
-}
-export default store
 
+    module.exports = state

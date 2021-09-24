@@ -1,6 +1,8 @@
 import {connect} from "react-redux";
 import Icons from "./Icons";
 
+
+
 let mapStateToProps = (state) => {
     return {icons: state.icons}
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import 'normalize.css';
 import ReactDOM from 'react-dom';
-import store from "./redux/redux-store";
+import store from "./store/store";
 import 'bootstrap/dist/css/bootstrap.css';
 import './static/css/font-awesome.css'
 import './static/css/style.css'

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from "./Icons.module.scss";
-
 const Icons = (props) => {
     return (
         <div className={styles.agileinfo_social_grids}>
